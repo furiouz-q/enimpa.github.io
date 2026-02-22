@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(./download.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.login{
+    background-color: ghostwhite;
+    width: 400px;
+    height: 550px;
+    padding: 100px;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px ;
+    gap: 30px;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    filter: grayscale(0) blur(2px);
+    transition: filter 0.5s ease;
+}
+img:hover{
+    filter: none;
+    transform: 0.5s;
+    transition: 0.5s ease;
+    box-shadow: 0 10px 25px black;
+}
+
+.sa{
+    color: cyan;
+    font-size: 25px;
+    animation: bounce 0.60s infinite;
+}
+.n{
+    color: white;
+    font-size: 25px;
+    animation: bounce 0.60s infinite;
+}
+.ta{
+    color: gold;
+    font-size: 25px;
+    animation: bounce 0.60s infinite;
+}
+.form-group{
+    margin-bottom: 10px;
+}
+label{
+    margin-bottom: 5px;
+    color: #555;
+    outline-color: none;
+    text-decoration: none;
+    border: none;
+}
+input{
+    width: 300px;
+    padding: 2px;
+    border: none;
+    margin: 5px;
+    height: 50px;
+    gap: 5px;
+    font-size: 20px;
+    caret-color: darkgrey;
+    outline: none;
+    border-radius: 5px;
+    transition: ease;
+    transition-delay: 0.3s;
+    text-decoration: none;
+}
+.but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+@keyframes bounce{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+}
+button{
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    color: dimgrey;
+    border-radius: 8px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.message{
+    display: flex;
+    text-shadow: 0 10px 25px black;
+    gap: 1px;
+}
+.message:hover{
+    .sa{
+        color: gold;
+        transition: 0.60s ease-in-out;
+    }
+.ta{
+    color: blue;
+    transition: 0.60s ease-in-out;
+}
+.n{
+    color: cyan;
+    transition: 0.60s ease-in-out;
+}
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
